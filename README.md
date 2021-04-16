@@ -21,15 +21,11 @@ _Remove OSD from ceph cluster_
 This is a small shell script which may be executed by the cluster administrator before they remove a node from the cluster.
 This ensure the osds are removed from the node, data is replicated to other nodes.
 
-### Assumptions
-* kubectl is at `/var/lib/rcplatform/rc-manager/kubectl`
-* kubernetes cluster is reachable.
-
-# How to run
+_How to run_
 `remove_osd.sh $HOSTNAME_TO_BE_REMOVED`
 
 
-### considerations
+_considerations_
 *ps: It is hacky, and depends on the timings which is not ideal. As a todo, should watch the state of cephcluster before purging the osd.*
 
 
