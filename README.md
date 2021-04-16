@@ -1,4 +1,4 @@
-# k8s-troubleshooting
+# k8s-troubleshooting and some utility scripts
 
 **kubelet.sh**
 
@@ -31,3 +31,7 @@ This ensure the osds are removed from the node, data is replicated to other node
 
 ### considerations
 *ps: It is hacky, and depends on the timings which is not ideal. As a todo, should watch the state of cephcluster before purging the osd.*
+
+
+**k3s.sh**
+Small script to boot a multi node k3s cluster on multipass
